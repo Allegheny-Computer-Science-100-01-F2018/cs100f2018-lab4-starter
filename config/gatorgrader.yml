@@ -1,0 +1,24 @@
+---
+name: cmpsc-100-fall-2018-lab4
+break: true
+indent: 4
+---
+src/main:
+    java:
+        labfour/WordHide.java:
+            --single 8 --language Java
+            --multi 2 --language Java
+            --fragment "println(" --count 12
+            --fragment "new Date(" --count 1
+            --fragment "substring(" --count 1
+            --fragment "charAt(" --count 1
+            --fragment "String" --count 10
+            --fragment "toUpperCase(" --count 1
+
+writing/reflection.md:
+    --paragraphs 3 --exact
+    --words 150
+--commits 5
+
+--command "gradle -q --console plain run" --executes
+--command "gradle -q --console plain run" --count 24 --exact
